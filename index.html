@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <h2>Eternal<span class="rinn">Rinnegan</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+    </nav>
+    <section class="container">
+        <h3>Hello there!</h3>
+        <h1>I'm <span>Kyle,</span> a Web<br>Developer</h1>
+        <p>Hello and welcome! I'm thrilled to present my web development portfolio, where 
+            creativity meets functionality. As a passionate web developer, I specialize in crafting 
+            immersive digital experiences that seamlessly blend design aesthetics with cutting-edge 
+            technology.</p>
+            <img class="gold" src="images/gold.png">
+             <button class="btn"><a class="hire" href="#">Hire Me</a></button>
+             <button class="btn1"><a class="portfolio" href="#">Portfolio</a></button>
+    </section>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle')
+        const toggleBtnIcon = document.querySelector('.toggle i')
+        const dropDownMenu = document.querySelector('.dropdown')
+
+        toggleBtn.onclick = function() {
+            const isOpen = dropDownMenu.classList.toggle('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars"
+        }  
+    </script>
+    <script src="https://kit.fontawesome.com/ee2f1420c9.js" crossorigin="anonymous"></script>
+</body>
+</html>
